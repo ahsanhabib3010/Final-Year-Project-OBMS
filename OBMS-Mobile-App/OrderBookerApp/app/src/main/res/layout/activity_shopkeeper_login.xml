@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahsanhabib.orderbookerapp.ShopkeeperLogin">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Order Booker"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/et_shopkeeperEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/corner"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorLink="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/et_shopkeeperPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_shopkeeperEmail"
+        android:layout_alignStart="@+id/et_shopkeeperEmail"
+        android:layout_below="@+id/et_shopkeeperEmail"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/corner"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_ShopkeeperLogin"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:text="LogIn"
+        android:background="@drawable/roundbutton"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/et_shopkeeperPassword"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtForgotPasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_ShopkeeperLogin"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="22dp"
+        android:text="Forgot Password?"
+        android:textAlignment="textEnd"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Don't Have an Account ?"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_above="@+id/btn_shopkeeperRegistration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_shopkeeperRegistration"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Register"
+        android:background="@drawable/roundbutton"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="For Shopkeeper"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>

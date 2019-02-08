@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahsanhabib.orderbookerapp.Shopkeeper_Products"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Select Products"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="34sp" />
+
+    <ListView
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp"></ListView>
+
+    <Button
+        android:id="@+id/btn_go_to_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+        android:padding="12dp"
+        android:text="CHECKOUT"
+        android:background="@drawable/roundbutton"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

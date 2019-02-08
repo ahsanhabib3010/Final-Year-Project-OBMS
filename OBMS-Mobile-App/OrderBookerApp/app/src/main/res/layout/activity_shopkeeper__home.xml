@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Shopkeeper"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textColor="@android:color/black"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            />
+    </RelativeLayout>
+
+    //1st ROW
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="30dp">
+
+            <ImageView
+                android:src="@drawable/placeordericon"
+                android:id="@+id/shopkeeperPlaceOrder"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Order"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/pastorders"
+                android:id="@+id/shopkeeperPastOrder"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Past Order"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    //2nd ROW
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="40dp">
+
+            <ImageView
+                android:src="@drawable/updateprofile"
+                android:id="@+id/shopkeeperUpdateProfile"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/logouticon"
+                android:id="@+id/shopkeeperLogout"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

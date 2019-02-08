@@ -1,0 +1,9 @@
+[{"id":"1","name":"Ali Distributor"},{"id":"2","name":"Aziz Distributor"}]
+
+
+
+
+http://10.65.33.227:8080/FYP/obms/script/shopkeeperLogin.php?d_email=ali@gmail.com&d_password=12345
+
+
+http://10.65.33.227:8080/FYP/obms/script/getDistributorList.php?id=8

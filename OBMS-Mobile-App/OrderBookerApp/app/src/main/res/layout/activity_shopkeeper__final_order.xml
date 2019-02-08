@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahsanhabib.orderbookerapp.Shopkeeper_FinalOrder">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Order"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distributor ID : "
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/distritubor_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Distributor Name : "
+           android:paddingLeft="25dp"
+           android:paddingRight="20dp"
+           android:paddingBottom="10dp"
+           android:textColor="@android:color/black"/>
+       <TextView
+           android:id="@+id/distritubor_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingBottom="10dp"
+           android:textColor="@android:color/black"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Product"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Per Rate"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:id="@+id/finalProductList"
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Grand Total = "
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/grandTotal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:background="@drawable/roundbutton"
+        android:padding="1dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#fff"
+        />
+
+</LinearLayout>

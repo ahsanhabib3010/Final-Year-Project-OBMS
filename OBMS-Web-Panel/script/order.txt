@@ -1,0 +1,7 @@
+Array
+(
+    [did] => 19
+    [sid] => 21
+    [total] => 300.0
+    [ordered_products] => [{"product_id":"22","qty":"3","product_name":"green"}]
+)

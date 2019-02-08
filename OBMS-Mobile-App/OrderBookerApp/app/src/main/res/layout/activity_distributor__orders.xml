@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahsanhabib.orderbookerapp.Distributor_Orders">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Per Rate"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:id="@+id/listview"
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="Grand Total = "-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="24dp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/total"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/roundbutton"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_reject"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/roundbutton"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

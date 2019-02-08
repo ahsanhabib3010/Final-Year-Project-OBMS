@@ -1,0 +1,123 @@
+<?php
+
+	header("Access-Control-Allow-Origin: *");
+	header("Content-Type: application/json; charset=UTF-8");
+
+
+	include('../dbcon.php');
+
+
+	file_put_contents('order.txt',print_r($_POST,true));
+
+	$arr=
+	array(
+		"did" => 16,
+		"sid" => 20,
+		"total" => 84688.0,
+		"ordered_products" => array(
+			array("product_id"=>14,"qty"=>2,"product_name"=>"Nokia"),
+			array("product_id"=>15,"qty"=>2,"product_name"=>"Nokia"),
+			array("product_id"=>16,"qty"=>2,"product_name"=>"Nokia")
+		),
+	);
+
+	echo $order= json_encode($arr);
+	exit;
+	
+	$products = json_decode($order);
+	
+	print_r($products);
+		
+	$distributor_id = $products->did;
+	$shopkeeper_id = $products->sid;
+	$totalprice = $products->total;
+	$ordered_products = $products->ordered_products;
+	//$date = date("Y-m-d H:i:s");
+	
+
+$qry = "INSERT INTO `orders`(`shopkeeper_id`, `distributor_id`, `order_totalprice`) 
+VALUES ('$shopkeeper_id','$distributor_id','$totalprice')";
+
+$run1 = mysqli_query($con,$qry);
+
+$last_order_id = mysqli_insert_id($con);
+
+foreach($ordered_products as $prod){
+
+	$pid =$prod->product_id;
+	$porderName =$prod->product_name;
+	$pqty= $prod->qty;
+
+	$qryOrderHasProduct = "INSERT INTO `orders_has_product`(`shopkeeper_id`,`order_id`, `product_id`, `product_name`, `product_qty`) 
+							VALUES ('$shopkeeper_id','$last_order_id','$pid','$porderName','$pqty')";
+
+	$run2 = mysqli_query($con,$qryOrderHasProduct);
+
+	if($run2 == TRUE) {
+		echo "Product Place Successfully";
+	}
+	else {
+		echo "Product Placement failed";
+	}
+
+
+}
+
+if($run1 == TRUE) {
+	 	echo "Order Place Successfully";
+	 }
+	 else {
+	 	echo "Order Placement failed";
+	 }
+
+
+//$productsArr = json_decode($ordered_products);
+
+// for($i=0; $i < count($productsArr); $i++){
+// 	$productsArr[$i]['product_id'];
+// 	var_dump($productsArr[$i]);
+
+
+// 	// $qry= "INSERT INTO `orders_has_product`(`shopkeeper_id`, `order_id`, `product_id`, `product_name`, `product_qty`) 
+// 	// VALUES ('$shopkeeper_id',null,'',[value-4],[value-5])";
+
+	
+// }
+	 
+//	 $date = date("Y-m-d H:i:s");
+	 
+	// $product_price = trim($_POST['price']);
+    // $product_qty = trim($_POST['qty']);
+
+	// $qry1 = "INSERT INTO `orders`(`shopkeeper_id`, `company_id`, `distributor_id`, `order_date`, `order_status`) 
+	// VALUES ('$shopkeeper_id', null, '$distributor_id', '$date' , 1) ";
+
+	// $run1 = mysqli_query($con,$qry1);
+
+	//$last_id = mysqli_insert_id($con);
+	//$last_id = '2';
+
+	//$products = json_decode($ordered_products, true);
+
+
+	// if (is_array($products) || is_object($products))
+	// {
+	// 	foreach ($products as $value)
+	// 	{
+	// 		$qry2 = "INSERT INTO `orders_has_products`(`shopkeeper_id`, `order_id`, `product_id`, `product_name`, `product_qty`) 
+	// 		VALUES ('$shopkeeper_id', '$last_id', '$value[a]','$value[b]', '$value[c]') ";
+			
+	// 		$run2 = mysqli_query($con,$qry2);
+			
+	// 	}
+	// }
+
+		// if($run1 == TRUE && $run2 == TRUE) {
+		// 	echo "Order Place Successfully";
+		// }
+		// else {
+		// 	echo "Order Placement failed";
+		// }
+
+	$con -> close();
+?>

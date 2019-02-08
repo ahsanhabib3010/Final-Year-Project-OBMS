@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opac_back"
+    tools:context="pk.org.hands.handsinternational.ShopkeeperOrderInventoryActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/header"
+        android:weightSum="5"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.7"
+            android:clickable="true"
+            android:src="@drawable/back_round" />
+
+        <TextView
+            android:id="@+id/imgview2"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="25dp"
+            android:layout_weight="3.6"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:text="Select Product"/>
+
+        <!--<ImageView
+            android:id="@+id/img_add"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.7"
+            android:clickable="true"
+            android:src="@drawable/add_round" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_noor"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Noor Name: Sadija Khatoon"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimary"/>
+
+    <ListView
+        android:id="@+id/list_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_noor"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1px"></ListView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_go_to_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:text="CHECKOUT"/>
+
+</RelativeLayout>

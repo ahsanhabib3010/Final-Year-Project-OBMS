@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahsanhabib.orderbookerapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Distributor_Home" />
+        <activity android:name=".Distributor_Registeration" />
+        <activity android:name=".ShopkeeperLogin" />
+        <activity android:name=".DistributorLogin" />
+        <activity android:name=".Shopkeeper_Registration" />
+        <activity android:name=".Shopkeeper_Home" />
+        <activity android:name=".Shopkeeper_PlaceOrder" />
+        <activity android:name=".Shopkeeper_PastOrders" />
+        <activity android:name=".Shopkeeper_UpdateProfile" />
+        <activity android:name=".Shopkeeper_Products" />
+        <activity android:name=".Shopkeeper_FinalOrder" />
+        <activity android:name=".Distributor_ViewOrder" />
+        <activity android:name=".Distributor_CompletedOrder" />
+        <activity android:name=".Distributor_UpdateProfile" />
+        <activity android:name=".Distributor_Orders" />
+        <activity android:name=".Completed_OrdersList"></activity>
+    </application>
+
+</manifest>

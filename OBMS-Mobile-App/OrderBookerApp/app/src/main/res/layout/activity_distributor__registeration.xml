@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"><![CDATA[
+    tools:context="com.example.ahsanhabib.orderbookerapp.Distributor_Registeration">
+
+
+    ]]>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:text="Distributor Registration"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/et_DistributorName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/et_DistributorContact"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/et_DistributorEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/et_DistributorAddress"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/et_DistributorRegion"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="Region"
+                android:inputType="text"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/et_DistributorPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/et_DistributorConfirmPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corner"
+                android:gravity="center_horizontal"
+                android:hint="ConfirmPassword"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton"
+                    android:text="Register"
+
+
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
